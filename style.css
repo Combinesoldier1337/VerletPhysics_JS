@@ -1,0 +1,18 @@
+body {
+	background-color: #292a2d;
+	display: inline-flex;
+}
+form {
+	padding-inline: 20px;
+}
+p {
+	display: table-row;
+    font-size: x-small;
+    color: #61636b;
+}
+select {
+	border-radius: 15px;
+}
+option {
+	border-radius: 25px;
+}

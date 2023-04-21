@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="style.css" />
+    <title>Player</title>
+  </head>
+<body> 
+    <canvas 
+		id="myCanvas" 
+		width=800 
+		height=600
+		onmousedown="handleClick(event)" >
+	</canvas>	
+	<form>
+		<p>Gravity type:</p>
+		<select id="enumGravity"></select>
+		<p>Border type:</p>
+		<select id="enumBorder"></select>		
+		<p>FPS:</p>
+		<input id="fpsInput" type="input"></input>
+		<p>Border Radius:</p>
+		<input id="borderRadiusInput" type="input"></input>
+		<p>Physics Iterations:</p>
+		<input id="physxIterationsInput" type="input"></input>
+		<p>Air Drag:</p>
+		<input id="airDragInput" type="input"></input>
+		<p>Custom Gravity:</p>
+		<input id="customGravityInputX" size="7" type="input"></input>
+		<input id="customGravityInputY" size="7" type="input"></input>
+		<p>Dot Rotation Radius:</p>
+		<input id="gravityRadiusInput" type="input"></input>
+		<p>Dot Rotation Speed:</p>
+		<input id="gravitySpeedInput" type="input"></input>
+	</form>	
+	<form>
+		<p>Random Radius (min, max):</p>
+		<input id="RadiusMinInput" size="7" type="input"></input>
+		<input id="RadiusMaxInput" size="7" type="input"></input>
+		<p>Border color:</p>
+		<input id="bgColorInput" size="7" type="color"></input>
+		<p>Void color:</p>
+		<input id="voidColorInput" size="7" type="color"></input>
+		<p>Dot color:</p>
+		<input id="dotColorInput" size="7" type="color"></input>
+		
+		<p>Apply settings: (Deprecated)</p>
+		<input id="updateButton" type="button" value="Update"></input>
+	</form>
+    <script src = "script.js"></script>
+	
+  </body>
+</html>
